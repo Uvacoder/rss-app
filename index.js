@@ -1,5 +1,6 @@
 let Parser = require('rss-parser');
 let parser = new Parser();
+var FB = require('fb');
 
 (async () => {
 
@@ -12,3 +13,13 @@ let parser = new Parser();
     });
 
 })();
+
+FB.setAccessToken('ACCESS_TOKEN');
+FB.api(
+    '/DailyDevTipsBlog/feed',
+    'POST',
+    { "message": "Testing with api" },
+    function (response) {
+        console.log(response);
+    }
+);

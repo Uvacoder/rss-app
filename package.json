@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "fb": "^2.0.0",
     "rss-parser": "^3.7.6"
   }
 }
