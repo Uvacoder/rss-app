@@ -3,7 +3,7 @@ let parser = new Parser();
 
 (async () => {
 
-    let feed = await parser.parseURL('https://daily-dev-tips.com/feed.xml');
+    let feed = await parser.parseURL('https://daily-dev-tips.com/sitemap.xml');
 
     console.log(feed.title);
 
